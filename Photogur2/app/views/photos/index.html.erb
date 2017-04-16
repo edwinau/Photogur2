@@ -1,6 +1,8 @@
 <h1> PHOTOS </h1>
 
 <%@photos.each do |photo| %>
- <p>ARTIST: <%= photo.artist%></p><p>TITLE: <%= photo.title%></p>
+<hr>
+<br>
+ <p>ARTIST: <%= photo.artist%></p><p>TITLE: <%= photo.title%></p><p>ID: <%= photo.id%></p>
  <img src="<%= photo.url %>">
 <%end%>
